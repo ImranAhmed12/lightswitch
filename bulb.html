@@ -1,84 +1,15 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>bulb Project</title>
-    
-    
-    
-    
-    
-    
-                                          <!--    CSS  -->
-    
-    
-    
-    
-    <style>
-        *
-        {
-            margin: 0px;
-            padding: 0px;
-            font-family: cursive;
-        }
-        .lightapp{
-            width: 100%;
-            height: 80vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #ffffff;
-            
-        }
-        
-        
-        figcaption{
-            text-align: center;
-        }
-        .slider{
-            text-align: center;
-        }
-        #bulbdata{
-            background-color: black;
-            color: #ffffff;
-            width: 100%;
-            height: 10vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .lightstyle{
-            padding: 40px;
-            
-        }
-  
-        button{
-            padding: 15px;
-            font-size: 1.5em;
-            border: 0px transparent black;
-            border-radius: 25px;
-            color: #ffffff;
-            background-color: black;
-            position: absolute; 
-            top: 85%;
-            left: 45%
-        }
-        button:hover
-        {
-            color: orange;
-            cursor: pointer;
-        }
-          
-    </style>
-    
-    
-    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On/Off LED Bulb</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body>  
     
                                               <!--    HTML   -->
-    
-    
-    
-    
     
     
     <center><h1 id="bulbdata">Light ON  OFF</h1></center>
@@ -118,36 +49,21 @@
     
         
            <center><button onclick="tubelight()">On/Off</button></center> 
+
+
+         <script src="index.js"></script>  
             
         
-
-    
-
-
-
-
-
-                                         <!--java script-->
-
-
-
-    <script>
-        const tubelight= () => {
-            for (x=1; x<6; x++){
-
-                let bid = document.getElementById('lightid'.concat(x))
-                if (bid.src.match('onbulb')){
-                    bid.src = 'images/offbulb.png'
-                }
-                else{
-                    bid.src= 'images/onbulb.jpg'
-                }
-            }
-        }
-    </script>
-    
-
-
-    
 </body>
 </html>
+
+    
+
+
+
+
+
+    
+
+
+    
